@@ -1,0 +1,122 @@
+header {
+    background-color: lightslategrey;
+    color: lightgoldenrodyellow;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+/* source for animation: https://css-tricks.com/snippets/css/typewriter-effect/ */
+header h1 {
+    font-size: 50px;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid transparent; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 2.5s steps(25, end),
+      blink-caret .75s step-end 4;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 50% }
+}
+  
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: lightgoldenrodyellow; }
+}
+
+
+@media screen and (prefers-reduced-motion: reduce){
+    header h1{
+        animation: none;
+    } 
+}
+
+
+header ul{
+    list-style: none;
+    margin-left: auto;
+}
+
+header ul a {
+    color:lightgoldenrodyellow;
+}
+
+h1, h2 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h3 {
+    font-size: 16pt;
+}
+
+h3 a {
+    color: black;
+}
+
+h4 {
+    font-size: 14pt;
+}
+
+h5 {
+    font-size: 12pt;
+}
+
+body h2 {
+    text-align: center;
+}
+
+nav ul li{
+    display: inline;
+    padding: 10px;
+    font-size: 20px;
+}
+
+#contact-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#headshot {
+    width: 15%; 
+    height: 15%;
+    padding: 5px;
+    border: solid lightslategrey;
+    border-width: thick;
+}
+
+.umlogo {
+    width: 5%;
+    height: 5%;
+    padding: 0px 4px 0px 4px;
+    margin-bottom: -3px;
+}
+
+.exp {
+    border: 2px solid lightslategray;
+    padding-left: 5px;
+    margin: 10px;
+}
+
+
+
+footer {
+    background-color: lightslategrey;
+    color: lightgoldenrodyellow;
+    height: 50px;
+}
+
+footer p {
+    text-align: center;
+    font-size: 24pt;
+}
