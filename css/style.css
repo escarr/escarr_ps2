@@ -33,7 +33,6 @@ header h1 {
     50% { border-color: lightgoldenrodyellow; }
 }
 
-
 @media screen and (prefers-reduced-motion: reduce){
     header h1{
         animation: none;
